@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link ref="stylesheet" type="text/css" href="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-<h1>how to code </h1>
-<p> follow the steps to sign up </p>
-<script></script>
+<h1 id="title">What Can JavaScript Do</h1>
+<p id="demo"> Welcome To first Day In Class</p>
+
+<button type="button" onclick="document.getElementById ('demo').innerHTML='Join netizen'">click</button>
+
+<button onclick="document.getElementById('title').innerHTML='lets create'"> Next</button>
+
+<div>
+    <button onclick="document.getElementById('myImage').src='bluey.jpeg'"> cars</button> 
+    <img id="myImage" src="bluey.jpeg" width="200px" alt="">
+    <button onclick="document.getElementById('myImage').src='bike.jpeg'"> bikes</button>
+</div>
+
 </body>
 </html>
