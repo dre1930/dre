@@ -18,3 +18,7 @@ if (Withdrawal <= 10000) {
     console.log("Transaction declined")
 }
 
+for (let i = 1; i < 100; i+=2) {
+    console.log(i)
+
+}
