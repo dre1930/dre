@@ -27,11 +27,11 @@ if (Withdrawal <= 10000) {
 //     for (let i = 0; i <= 999; i++) {
 //         let pin = i.toString().padStart(3, '0');
 //         pinCode.push(pin);
-//     }
-//     console.log(pinCode);
+//  }
+//   console.log(pinCode);
 
 
-let course = ['Cyber','web development','data analysis','ui/ux design',
+ let course = ['Cyber','web development','data analysis','ui/ux design',
     'data science','software engineering','mobile development'];
 console.log(course);
 course.push('artificial intelligence','blockchain','machine','learning','computer vision',
@@ -47,3 +47,6 @@ course.push('artificial intelligence','blockchain','machine','learning','compute
     console.log(greeting.join(''))
 let courseBylength=courses.sort((a, b) =>b.length - a.length)
 console.log(coursesBylength);
+
+let animals =['cat','dog'];
+animals.push('rabit');
