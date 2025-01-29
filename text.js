@@ -61,7 +61,7 @@ console.log(numbers.indexOf(3));
 console.log(numbers.includes(6));
 */
 
-const Dre ={
+/*const Dre ={
     firstname: "Dre",
     lastname: "walker",
     color: "blue",
@@ -76,4 +76,14 @@ console.log (Dre.greet());
 
 for (let name in Dre) {
     console.log(`${name}: ${Dre[name]}`);
-}
+}*/
+
+/*let box = document.getElementById("box");
+box.style.background = "blue";
+
+let button = document.getElementById("darkmode");
+button.addEventListener("click", function(){
+
+    document.body.style.backgroungColor = "red";
+    document.body.style.color = "brown";
+});*/
