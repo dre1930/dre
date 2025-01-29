@@ -1,4 +1,4 @@
-alert("welcome to Java");
+//alert("welcome to Java");
 
 /*let myName = 'Dre';
 let myAge = 20; //Replace with your age
@@ -31,7 +31,7 @@ if (Withdrawal <= 10000) {
 //   console.log(pinCode);
 
 
- let course = ['Cyber','web development','data analysis','ui/ux design',
+ /*let course = ['Cyber','web development','data analysis','ui/ux design',
     'data science','software engineering','mobile development'];
 console.log(course);
 course.push('artificial intelligence','blockchain','machine','learning','computer vision',
@@ -50,3 +50,30 @@ console.log(coursesBylength);
 
 let animals =['cat','dog'];
 animals.push('rabit');
+animals.unshift('lion');
+animals.pop();
+animals.shift();
+
+console.log(animals);
+
+let numbers = [1,2,3,4,5,];
+console.log(numbers.indexOf(3));
+console.log(numbers.includes(6));
+*/
+
+const Dre ={
+    firstname: "Dre",
+    lastname: "walker",
+    color: "blue",
+    job: "blacksmith",
+
+    greet: function () {
+        return `Hello,my name is ${this.firstname} ${this.lastname}`;
+    }
+}
+console.log (Dre.job);
+console.log (Dre.greet());
+
+for (let name in Dre) {
+    console.log(`${name}: ${Dre[name]}`);
+}
