@@ -87,3 +87,15 @@ button.addEventListener("click", function(){
     document.body.style.backgroungColor = "red";
     document.body.style.color = "brown";
 });*/
+
+
+/*function myfunction(){
+let x = document.getElementsByName("name").value ;
+let text;
+if (isNaN(x)|| x < 10|| x > 20) {
+    text = "input not valid";
+} else {
+    text = "input correct";
+}
+document.getElementsByName("demo").innerHTML=text;
+}*/
