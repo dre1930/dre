@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <div></div>
+    <div id="div"></div>
+    <button id="increment">increment</button>
 
     <script>
-        let parentDiv = document.getElementsByTagName('div');
-        console.log(parentDiv);
-        let targetDiv = parentDiv[0]
-        let length = '300px';
-        let width = '200px';
+        let count = 0;
+        let incrementButton = document.getElementById("increment");
+    let div = document.getElementById('div');
+    div.style.width = '300px';
+    div.style.height = '300px';
+    div.style.backgroundColor = 'gray';
+    div.textContent = '0';
+    div.style.fontSize = '50px';
+    div.style.display = 'flex';
+    div.style.justifyContent = 'center';
+    div.style.alignItems = 'center';
+    div.style.borderRadius = '50%';
+    div.style.border = '10px solid green';
+    div.style.cursor = 'pointer';
+
+    function incrementCount() {
+        count++;
+        box.textContent = count;
+    }
+    incrementButton.addEventListener('click',)
+    
+
+
     </script>
 </body>
 </html>
