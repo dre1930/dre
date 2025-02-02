@@ -14,11 +14,11 @@
 </head>
 <body>
     <div id="div"></div>
-    <button id="increment">increment</button>
+    <button id="incr">increment</button>
 
     <script>
         let count = 0;
-        let incrementButton = document.getElementById("increment");
+        let incrementButton = document.getElementById("incr");
     let div = document.getElementById('div');
     div.style.width = '300px';
     div.style.height = '300px';
@@ -32,11 +32,12 @@
     div.style.border = '10px solid green';
     div.style.cursor = 'pointer';
 
-    function incrementCount() {
+    const incrementCount= () => {
         count++;
         box.textContent = count;
     }
-    incrementButton.addEventListener('click',)
+
+    incrementButton.addEventListener('click', incrementCount);
     
 
 
