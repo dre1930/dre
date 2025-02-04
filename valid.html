@@ -14,10 +14,11 @@
 </head>
 <body>
     <div id="div"></div>
-    <button id="incr">increment</button> 
-    <button id="dcr">decrement</button>
-    <button id="reset">reset</button>
-  
+    <section class="wrapper">
+        <button  id = 'incr'>increment</button>
+        <button id = 'reset'> reset</button>
+        <button id = 'dcr'> decrement</button>
+    </section>
     <script>
         let count= 0;
         let incrementButton = document.getElementById("incr");
@@ -45,6 +46,7 @@
     incrementButton.addEventListener('click', incrementCount);
 
     const decrementCount= () =>{
+    
         count--;
         div.textContent = count;
     }
