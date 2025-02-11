@@ -20,9 +20,9 @@
             box-sizing: border-box;
             font-family: "Poppins", serif;
         }
-        section{
-            /* background-color: blueviolet; */
-        }
+        /* section{
+            /* background-color: blueviolet; 
+        } */
         .purple_div{
             height: 35vh;
             width: 100vw;
@@ -90,6 +90,7 @@
                     <div class="question">
                         <h4>What is frontend mentor, and how will it help me?</h4>
                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        
                     </div>
                     <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sit cumque accusantium voluptatem possimus voluptas magnam, qui perspiciatis laudantium porro.</p>
                 </div>
@@ -97,6 +98,7 @@
                     <div class="question">
                         <h4>Why are you at Netisens ICT?</h4>
                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                         
                     </div>
                     <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sit cumque accusantium voluptatem possimus voluptas magnam, qui perspiciatis laudantium porro.</p>
                 </div>
@@ -104,6 +106,7 @@
                     <div class="question">
                         <h4>What is Cyber Security</h4>
                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                         
                     </div>
                     <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sit cumque accusantium voluptatem possimus voluptas magnam, qui perspiciatis laudantium porro.</p>
                 </div>
@@ -111,6 +114,8 @@
                     <div class="question">
                         <h4>What is Web Development?</h4>
                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                         
+                        
                     </div>
                     <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sit cumque accusantium voluptatem possimus voluptas magnam, qui perspiciatis laudantium porro.</p>
                 </div>
@@ -123,10 +128,19 @@
         for(let faq of faqs){
             faq.addEventListener('click', () => {
                 const answer = faq.querySelector('.answer');
+                const icon = faq.querySelector('.fa');
+
+                if(icon.classList.contains('fa-plus-circle')){
+                    icon.classList.remove('fa-plus-circle');
+                    icon.classList.add('fa-minus-circle');
+                }else{
+                    icon.classList.replace('fa-minus-circle', 'fa-plus-circle');
+                }
                 answer.classList.toggle('show');
                 console.log(answer);
             })
         }
+    
 
         // for(let i = 0; i < faqs.length; i++){
         //     console.log(faqs[i].innerHTML);
