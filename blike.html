@@ -4,11 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .section{
+            place-items:center;
+            display: grid;
+        }
+        .blue{
+            height: 100vh;
+            width: 100vw;
+            background-color: #0074CF;
+            display: grid;
+            place-items:center;
+        }
+        .whit-div{
+            height: 40vh;
+            width: 50vw;
+            background-color: white;
+             border-radius: 5px;      
+        }
+       .input-wrap{
+        display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+        gap: 15px;
+       }
+       .input-wrap{
+        width: 30vw;
+         
+        border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+     
+    }
+    .task{
+        width: 5vw;
+        
+    }
+    </style>
 </head>
-<body>
+<body class="blue">
     <section>
-       <div class="blue-div"></div>
-       <div class="whit-div"></div>
+       <div class="whit-div">
+        <div class="input-wrap"> 
+            <input type="text" placeholder="Add a new task" >
+            <button class="task">Add Task</button>
+             <div class="clear">
+                <button>Clear All</button>
+             </div>
+             <div>
+              <button class="bt">
+                <h6 class="all">All</h6>
+              </button>
+              <hr>
+             </div>
+        </div>
+       </div>
+       
     </section>
 </body>
 </html>
