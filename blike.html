@@ -31,18 +31,43 @@
        flex-direction: column;
        justify-content: space-between;
         gap: 15px;
-       }
-       .input-wrap{
-        width: 30vw;
-         
+        float:initial;
+        width: 45vw;
+        height: 8vh;
         border-radius: 20px;
     padding: 20px;
     display: flex;
-    flex-direction: column;
-     
-    }
+    flex-direction: column;}
+    
     .task{
         width: 5vw;
+        float: right;
+        justify-content: space-between;
+        background-color: #0074CF;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        height: 6vh;
+        
+    }
+     .all{
+        width: 5vw;
+       align-content: center;
+        justify-content: space-between;
+        background-color:  white;
+        color: black;
+        border: none;
+        border-radius: 2px;
+        height: 5vh;
+        
+     }
+    .ca{
+        background-color: #0074CF;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        height: 5vh;
+        align-content: center;
         
     }
     </style>
@@ -50,18 +75,18 @@
 <body class="blue">
     <section>
        <div class="whit-div">
-        <div class="input-wrap"> 
-            <input type="text" placeholder="Add a new task" >
-            <button class="task">Add Task</button>
-             <div class="clear">
-                <button>Clear All</button>
-             </div>
-             <div>
+          <div class="input-wrap"> 
+           <span class="spa">
+            <button> 
+            <input type="text" placeholder="Add a new task"></button>
+            <button class="task">Add Task</button> </span>
+             <span> <div class="clear">
+                <button class="ca">Clear All</button>
               <button class="bt">
                 <h6 class="all">All</h6>
-              </button>
-              <hr>
-             </div>
+              </button> </span>
+              
+             </div><hr>
         </div>
        </div>
        
