@@ -1,29 +1,183 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-    <link ref="stylesheet" type="text/css" href="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exchange Wallet</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d111c;
+      color: white;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    header .tabs,
+    header nav {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    header .tabs span,
+    header nav span {
+      padding: 5px 10px;
+      color: #888;
+    }
+
+    header .tabs .active,
+    header nav .active {
+      color: white;
+      font-weight: bold;
+      border-bottom: 2px solid yellow;
+    }
+
+    .value-section p {
+      margin: 5px 0;
+    }
+
+    .value-section h1 {
+      font-size: 2em;
+      margin: 5px 0;
+    }
+
+    .value-section h1 span {
+      font-size: 0.5em;
+      color: #ccc;
+    }
+
+    .pnl {
+      color: white;
+    }
+
+    .pnl .negative {
+      color: red;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .actions button {
+      background-color: #fcd535;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .notice {
+      background-color: #1e2329;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .notice .completed {
+      color: #00c076;
+      font-weight: bold;
+    }
+
+    .account h2 {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .balances .balance-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #12161c;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #333;
+    }
+
+    .footer-tab {
+      color: #888;
+    }
+
+    .footer-tab.active {
+      color: white;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<h1 id="title">What Can JavaScript Do</h1>
-<p id="demo"> Welcome To first Day In Class</p>
+  <div class="container">
+    <header>
+      <div class="tabs">
+        <span class="active">Exchange</span>
+        <span>Wallet</span>
+      </div>
+      <nav>
+        <span class="active">Overview</span>
+        <span>Spot</span>
+        <span>Futures</span>
+        <span>Earn</span>
+      </nav>
+    </header>
 
-<button type="button" onclick="document.getElementById ('demo').innerHTML='Join netizen'">click</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <main>
+      <div class="value-section">
+        <p>Est. Total Value</p>
+        <h1>$32,000.00 <span>USD</span></h1>
+        <p class="pnl">Today's PNL <span class="negative">- $1.21 (-2.37%)</span></p>
+      </div>
 
-<button onclick="document.getElementById('title').innerHTML='lets create'"> Next</button>
+      <div class="actions">
+        <button>Add Funds</button>
+        <button>Send</button>
+        <button>Transfer</button>
+      </div>
 
-<div style="margin-top: 30px;">
-    <img id="myImage" src="bluey.jpeg" width="200px" alt="">
-</div>
-<button onclick="document.getElementById('myImage').src='bluey.jpeg'"> cars</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="notice">
+        <p>Crypto deposit 14,343 USDT <span class="completed">Completed</span></p>
+      </div>
 
-<button onclick="document.getElementById('myImage').src='bike.jpeg'"> bikes</button>
-<div>
+      <section class="account">
+        <h2>Account</h2>
+        <div class="balances">
+          <div class="balance-row">
+            <span>Spot</span>
+            <span>$32,000</span>
+          </div>
+          <div class="balance-row">
+            <span>Futures</span>
+            <span>$0.86717078</span>
+          </div>
+          <div class="balance-row">
+            <span>Earn</span>
+            <span>$0.00</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
-</div>
-
-<script src="text.js"></script>
+    <footer>
+      <div class="footer-tab">Home</div>
+      <div class="footer-tab">Markets</div>
+      <div class="footer-tab">Trade</div>
+      <div class="footer-tab">Futures</div>
+      <div class="footer-tab active">Assets</div>
+    </footer>
+  </div>
 </body>
 </html>
